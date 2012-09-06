@@ -1,0 +1,27 @@
+doctest: Setup
+>> require './hello'
+=> true
+
+doctest: Testing rubydoctest
+>> "Hello World"
+=> "Hello World"
+
+This is just a comment block, we can actually write whatever we want. :)
+
+And it won"t disrupt our test.
+doctest: We have a method called hello that returns "Hello World!"
+>> hello
+=> "Hello World!"
+Add a new test now that we have a passing test
+
+doctest: My hello method can accept an punctuation and greet directly
+>> hello("Jezrel")
+=> "Hello Jezrel!"
+>> hello("Hannah")
+=> "Hello Hannah!"
+
+Yehey! We pass two features, one is default, the other is with a name..
+doctest: We can ask a question if we pass in "Victor",'?' as punctuations
+>> hello("Victor", "?")
+=> "Hello Victor?"
+
